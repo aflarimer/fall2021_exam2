@@ -3,6 +3,7 @@ namespace fall2021_exam2
     public class PizzaUtilities
     {
         private Pizza[] myPizzas;
+        
         public PizzaUtilities(Pizza[] myPizzas) {
             this.myPizzas = myPizzas;
         }

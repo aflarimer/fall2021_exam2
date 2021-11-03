@@ -8,6 +8,7 @@ namespace fall2021_exam2
         {
             Pizza[] myPizzas = new Pizza[50];
             PizzaFile PizzaFile = new PizzaFile(myPizzas);
+            myPizzas = PizzaFile.ReadAllPizzas();
             PizzaUtilities PizzaUtil = new PizzaUtilities(myPizzas);
             PizzaReport PizzaReport = new PizzaReport(myPizzas);
 

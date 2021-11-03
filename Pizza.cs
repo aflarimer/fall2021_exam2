@@ -3,14 +3,14 @@ namespace fall2021_exam2
     public class Pizza
     {
         private string name; 
-        private string size; 
-        private int crust; 
+        private int size; 
+        private string crust; 
         private int cost; 
         private static int count;
         public Pizza()
         {
         }
-        public Pizza(string name, string size, int crust, int cost) {
+        public Pizza(string name, int size, string crust, int cost) {
             this.name = name; 
             this.size = size; 
             this.crust = crust; 
@@ -22,17 +22,17 @@ namespace fall2021_exam2
         public void SetName(string name) {
             this.name = name;
         }
-        public string GetSize() {
+        public int GetSize() {
             return size;
         }
-        public void SetSize(string size) {
+        public void SetSize(int size) {
             this.size = size; 
         }
-        public int GetCrust()
+        public string GetCrust()
         {
             return crust;
         }
-        public void SetCrust(int crust)
+        public void SetCrust(string crust)
         {
             this.crust = crust; 
         }
