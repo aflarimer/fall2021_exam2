@@ -7,7 +7,7 @@ namespace fall2021_exam2
         {
             this.myPizzas = myPizzas; 
         }
-        public void MinSizeByCrust() //this is a problem cause crust is a string not an integer like length was
+        public void MinSizeByCrust()
         {
             //your code for here
         }
