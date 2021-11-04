@@ -28,10 +28,14 @@ namespace fall2021_exam2
             inFile.Close();
             return myPizzas;
         }
-        // public void WriteAllPizzas()  //question 3 //need to talk about this cause append mode
-        // {
-        //     //your code here
-        // }
+        public void WriteAllPizzas()  //question 3 //need to talk about this cause append mode
+        {
+            StreamWriter outFile = new StreamWriter("pizzas.txt");
+            for(int i = 0; i < Pizza.GetCount(); i++) {
+                outFile.WriteLine(myPizzas[i].Delimited());
+            }
+            outFile.Close();
+        }
         public Pizza[] AddPizza(){ //question 2 //return pizza array?
             System.Console.WriteLine("Enter the customer name");
             string name = Console.ReadLine();
@@ -44,10 +48,10 @@ namespace fall2021_exam2
             System.Console.WriteLine("Enter the cost");
             int cost = int.Parse(Console.ReadLine());
 
-            Pizza.IncCount();//either or with the + 1
+            //Pizza.IncCount();//either or with the + 1
 
             Pizza temp = new Pizza(name, type, size, minutes, cost);
-            myPizzas[Pizza.GetCount()] = temp;
+            myPizzas[Pizza.GetCount()] = temp; //had to use regular get count cause count is higher than the spots in the array...how we feel about that cause kids might not get that?
             return myPizzas;
         }
 

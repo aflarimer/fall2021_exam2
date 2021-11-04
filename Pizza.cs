@@ -66,5 +66,9 @@ namespace fall2021_exam2
         public override string ToString() {
             return customerName + "\t\t" + pizzaType + "\t\t" + size + "\t\t" + minutesToMake + "\t\t" + cost;
         }
+
+        public string Delimited() {
+            return customerName + "#" + pizzaType + "#" + size + "#" + minutesToMake + "#" + cost;
+        }
     }
 }
