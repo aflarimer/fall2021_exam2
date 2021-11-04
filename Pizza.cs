@@ -6,14 +6,17 @@ namespace fall2021_exam2
         private string pizzaType; 
         private string size; 
         private int minutesToMake;
-        private int cost; 
+        private int salesPrice; 
+        private int costToMake;
         private static int count;
-        public Pizza(string customerName, string pizzaType, string size, int minutesToMake, int cost) {
+        public Pizza(string customerName, string pizzaType, string size, int minutesToMake, int salesPrice, int costToMake, int profit) {
             this.customerName = customerName;
             this.pizzaType = pizzaType;
             this.size = size;
             this.minutesToMake = minutesToMake;
-            this.cost = cost;
+            this.salePrice = salePrice;
+            this.costToMake = costToMake;
+            this.profit = profit;
         }
         public string GetCustName() {
             return customerName;
@@ -43,13 +46,28 @@ namespace fall2021_exam2
         {
             this.minutesToMake = minutesToMake; 
         }
-        public int GetCost()
+        public int GetSalePrice()
         {
-            return cost;
+            return salePrice;
         }
-        public void SetCost(int cost)
+        public void SetSalePrice(int salePrice)
         {
-        this.cost = cost; }
+            this.salePrice = salePrice; 
+        }
+
+        public void GetCostToMake() {
+            return costToMake;
+        }
+
+        public int SetCostToMake(int costToMake) {
+            this.costToMake = costToMake;
+        }
+        public static int GetProfit() {
+            return profit;
+        }
+        public static void SetProfit(int profit) {
+            this.profit = profit;
+        }
         public static int GetCount() {
             return count;
         }
@@ -64,11 +82,11 @@ namespace fall2021_exam2
         }
 
         public override string ToString() {
-            return customerName + "\t\t" + pizzaType + "\t\t" + size + "\t\t" + minutesToMake + "\t\t" + cost;
+            return customerName + "\t\t" + pizzaType + "\t\t" + size + "\t\t" + minutesToMake + "\t\t" + salePrice + "\t\t" + costToMake;
         }
 
         public string Delimited() {
-            return customerName + "#" + pizzaType + "#" + size + "#" + minutesToMake + "#" + cost;
+            return customerName + "#" + pizzaType + "#" + size + "#" + minutesToMake + "#" + salePrice + "#" + costToMake;
         }
     }
 }

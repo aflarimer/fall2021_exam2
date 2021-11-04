@@ -1,9 +1,9 @@
-Loki#Pepperoni#Small#20#9
-Thor#Cheese#Large#30#15
-Black Widow#Cheese#Medium#25#11
-Hulk#Pepperoni#Small#20#9
-Captain America#Pepperoni#Medium#27#13
-Hawkeye#Cheese#Large#30#15
-Iron Man#Pepperoni#Small#20#9
-Jeff#Pepperoni#Large#35#17
-Scarlet Witch#Cheese#Medium#25#11
+Loki#Pepperoni#Small#20#9#5
+Thor#Cheese#Large#30#15#11
+Black Widow#Cheese#Medium#25#11#7
+Hulk#Pepperoni#Small#20#9#5
+Captain America#Pepperoni#Medium#27#13#9
+Hawkeye#Cheese#Large#30#15#11
+Iron Man#Pepperoni#Small#20#9#5
+Jeff#Pepperoni#Large#35#17#13
+Scarlet Witch#Cheese#Medium#25#11#7

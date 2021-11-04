@@ -19,8 +19,10 @@ namespace fall2021_exam2
             while(line != null) {
                 string[] data = line.Split('#');
                 int minutes = int.Parse(data[3]);
-                int cost = int.Parse(data[4]);
-                Pizza temp = new Pizza(data[0],data[1],data[2],minutes,cost);
+                int salePrice = int.Parse(data[4]);
+                int costToMake = int.Parse(data[5]);
+                int profit = salePrice - costToMake;
+                Pizza temp = new Pizza(data[0],data[1],data[2],minutes,salesPrice,costToMake, profit);
                 myPizzas[Pizza.GetCount()] = temp;
                 Pizza.IncCount();
                 line = inFile.ReadLine();
@@ -28,7 +30,7 @@ namespace fall2021_exam2
             inFile.Close();
             return myPizzas;
         }
-        public void WriteAllPizzas()  //question 3 //need to talk about this cause append mode
+        public void WriteAllPizzas()  //question 3
         {
             StreamWriter outFile = new StreamWriter("pizzas.txt");
             for(int i = 0; i < Pizza.GetCount(); i++) {
@@ -36,7 +38,7 @@ namespace fall2021_exam2
             }
             outFile.Close();
         }
-        public Pizza[] AddPizza(){ //question 2 //return pizza array?
+        public Pizza[] AddPizza(){ //question 2
             System.Console.WriteLine("Enter the customer name");
             string name = Console.ReadLine();
             System.Console.WriteLine("Enter the pizza type");
@@ -45,13 +47,14 @@ namespace fall2021_exam2
             string size = Console.ReadLine();
             System.Console.WriteLine("Enter the minutes");
             int minutes = int.Parse(Console.ReadLine());
-            System.Console.WriteLine("Enter the cost");
-            int cost = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Enter the sales price");
+            int salePrice = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Enter the cost to make");
+            int costToMake = int.Parse(Console.ReadLine());
+            int profit = salePrice - costToMake; //had to calc profit since its in the constructor
 
-            //Pizza.IncCount();//either or with the + 1
-
-            Pizza temp = new Pizza(name, type, size, minutes, cost);
-            myPizzas[Pizza.GetCount()] = temp; //had to use regular get count cause count is higher than the spots in the array...how we feel about that cause kids might not get that?
+            Pizza temp = new Pizza(name, type, size, minutes, salePrice, costToMake, profit);
+            myPizzas[Pizza.GetCount()] = temp; 
             return myPizzas;
         }
 

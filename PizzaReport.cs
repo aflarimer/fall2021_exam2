@@ -41,6 +41,13 @@ namespace fall2021_exam2
             return foundIndex;
         }
 
+        public void HighLowProfitDay() { //control break with range bonus
+            int[] sumArray = new int[7];
+            for (int i = 0; i < Pizza.GetCount(); i++) {
+                //need to write this
+            }
+        }
+
         // public void SortByPizzaType() {
         //     //assume this works!!
         // }
