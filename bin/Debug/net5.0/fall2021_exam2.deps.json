@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "fall2021_exam2/1.0.0": {
+        "runtime": {
+          "fall2021_exam2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "fall2021_exam2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

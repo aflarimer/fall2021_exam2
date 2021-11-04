@@ -2,39 +2,46 @@ namespace fall2021_exam2
 {
     public class Pizza
     {
-        private string name; 
-        private int size; 
-        private string crust; 
+        private string customerName;
+        private string pizzaType; 
+        private string size; 
+        private int minutesToMake;
         private int cost; 
         private static int count;
-        public Pizza()
-        {
-        }
-        public Pizza(string name, int size, string crust, int cost) {
-            this.name = name; 
-            this.size = size; 
-            this.crust = crust; 
+        public Pizza(string customerName, string pizzaType, string size, int minutesToMake, int cost) {
+            this.customerName = customerName;
+            this.pizzaType = pizzaType;
+            this.size = size;
+            this.minutesToMake = minutesToMake;
             this.cost = cost;
         }
-        public string GetName() {
-            return name;
+        public string GetCustName() {
+            return customerName;
         }
-        public void SetName(string name) {
-            this.name = name;
+        public void SetCustName(string customerName) {
+            this.customerName = customerName;
         }
-        public int GetSize() {
+
+        public string GetPizzaType() {
+            return pizzaType;
+        }
+
+        public void SetPizzaType(string pizzaType) {
+            this.pizzaType = pizzaType;
+        }
+        public string GetSize() {
             return size;
         }
-        public void SetSize(int size) {
+        public void SetSize(string size) {
             this.size = size; 
         }
-        public string GetCrust()
+        public int GetMinutesToMake()
         {
-            return crust;
+            return minutesToMake;
         }
-        public void SetCrust(string crust)
+        public void SetMinutesToMake(int minutesToMake)
         {
-            this.crust = crust; 
+            this.minutesToMake = minutesToMake; 
         }
         public int GetCost()
         {
@@ -53,11 +60,11 @@ namespace fall2021_exam2
             count++; 
         }
         public int CompareTo(Pizza myPizza) {
-            return name.CompareTo(myPizza.GetName());
+            return customerName.CompareTo(myPizza.GetCustName());
         }
 
         public override string ToString() {
-            return name + "\t" + size + "\t" + crust + "\t" + cost;
+            return customerName + "\t\t" + pizzaType + "\t\t" + size + "\t\t" + minutesToMake + "\t\t" + cost;
         }
     }
 }

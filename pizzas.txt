@@ -1,5 +1,9 @@
-Supreme#8#Normal#9
-Meat Lovers#14#Stuffed#15
-Margherita#12#Thin#10
-BBQ Chicken#12#Normal#11
-Cheese#8#Stuffed#7
+Loki#Pepperoni#Small#20#9
+Thor#Cheese#Large#30#15
+Black Widow#Cheese#Medium#25#11
+Hulk#Pepperoni#Small#20#9
+Captain America#Pepperoni#Medium#27#13
+Hawkeye#Cheese#Large#30#15
+Iron Man#Pepperoni#Small#20#9
+Jeff#Pepperoni#Large#35#17
+Scarlet Witch#Cheese#Medium#25#11

@@ -7,27 +7,17 @@ namespace fall2021_exam2
         static void Main(string[] args)
         {
             Pizza[] myPizzas = new Pizza[50];
-            PizzaFile PizzaFile = new PizzaFile(myPizzas);
-            myPizzas = PizzaFile.ReadAllPizzas();
-            PizzaUtilities PizzaUtil = new PizzaUtilities(myPizzas);
-            PizzaReport PizzaReport = new PizzaReport(myPizzas);
 
-            //Read Pizza data from a file and populate array PizzaFile.ReadAllPizzas();
+            PizzaFile pizzaFile = new PizzaFile(myPizzas);
+    
+            //this is your method for populating the array
+            myPizzas = pizzaFile.ReadAllPizzas();
+            myPizzas = pizzaFile.AddPizza(); //this is weird and not working
+        
 
-            //Sort the Pizzas by Crust
-            PizzaUtil.SortByCrust(); //You can assume this sort works even though you can't see the code
-
-            //Produce the MinLengthByGenre Report
-            PizzaReport.MinSizeByCrust();
-
-            //Produce the AvgCost Report 
-            PizzaReport.AvgCost();
-
-            //Produce the CombinedCost Report 
-            PizzaReport.CombinedCost();
-            
-            //Sort the Pizzas by name
-            PizzaUtil.SortByName();     
+            PizzaReport pizzaReport = new PizzaReport(myPizzas);
+            pizzaReport.PrintAll();
+ 
         }
     }
 }

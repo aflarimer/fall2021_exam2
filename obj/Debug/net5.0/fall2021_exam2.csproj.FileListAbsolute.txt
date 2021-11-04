@@ -1,0 +1,15 @@
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.csproj.AssemblyReference.cache
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.AssemblyInfoInputs.cache
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.AssemblyInfo.cs
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.csproj.CoreCompileInputs.cache
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/fall2021_exam2.deps.json
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/fall2021_exam2.runtimeconfig.json
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/fall2021_exam2.runtimeconfig.dev.json
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/fall2021_exam2.dll
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/ref/fall2021_exam2.dll
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/bin/Debug/net5.0/fall2021_exam2.pdb
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.dll
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/ref/fall2021_exam2.dll
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.pdb
+/Users/annelarimer/Desktop/Source/Repos/TA/fall2021_exam2/obj/Debug/net5.0/fall2021_exam2.genruntimeconfig.cache
